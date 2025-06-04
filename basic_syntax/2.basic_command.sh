@@ -27,3 +27,14 @@ git push origin 브랜치명 --force
 git checkout 커밋ID
 # 특정 브랜치명으로 전환
 git checkout 브랜치명
+
+# pull은 원격의 변경사항을 local로 내려받는것(fetch + merge)
+git pull origin main
+# fetch는 변경사항을 local로 가져오되, 병합은 하지 않음
+git fetch origin main
+# 만약 모든 브렌치의 변경사항을 가져오려면
+git fetch --all
+# 버전별(commit간)의 비교 명령어
+git diff A B
+git diff commitId1 commitId2
+git diff 브렌치1 브렌치2
