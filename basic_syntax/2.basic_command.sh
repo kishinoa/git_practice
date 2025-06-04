@@ -38,3 +38,9 @@ git fetch --all
 git diff A B
 git diff commitId1 commitId2
 git diff 브렌치1 브렌치2
+
+# 가장 최신의 commit 취소
+git reset head~1
+git reset head^
+# 이미 push된 commit사항 되돌리기(완전취소x) -> 되돌리는 commitID생성
+git revert 커밋ID
