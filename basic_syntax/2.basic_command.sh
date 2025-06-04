@@ -44,3 +44,12 @@ git reset head~1
 git reset head^
 # 이미 push된 commit사항 되돌리기(완전취소x) -> 되돌리는 commitID생성
 git revert 커밋ID
+
+# 작업중인사항을 임시저장
+git stash
+# 마지막으로 저장한 사항을 꺼내서 적용
+git stash pop
+# 저장한 작업 목록 조회
+git stash list
+# 저장한목록 전체삭제
+git stash clear
