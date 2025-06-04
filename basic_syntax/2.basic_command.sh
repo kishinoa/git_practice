@@ -26,4 +26,4 @@ git push origin 브랜치명 --force
 # 특정 commit ID로의 전환
 git checkout 커밋ID
 # 특정 브랜치명으로 전환
-git checkout 브랜치명10
+git checkout 브랜치명
