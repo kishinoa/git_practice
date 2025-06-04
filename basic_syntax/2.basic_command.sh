@@ -65,5 +65,17 @@ git tag
 # 브랜치 생성
 # 현재 checkout되어있는 브랜치를 기준으로 새로운 브랜치 생성
 git branch 브랜치명
-
 # 새로운 작업시작시에, main을 최신화 한 후에 main을 기준으로 branch를 생성
+
+# 1. 최신화된 main에서 브랜치 생성
+# 2. 코드 수정하고 commit 하고, git push origin feat1
+# 3. pr을 생성 -> 충돌시
+# 3-1) UI상에서 해결
+# 3-2) origin에서 push전에 git pull origin main하여 미리 해결
+# 4. 팀원들이 pr사항을 검코후 review 및 merge
+
+# 브런치 생성과 전환을 동시에
+git checkout -b 브랜치명
+
+# 로컬브랜치 삭제(원격은 별도삭제)
+git branch -D 브랜치명
