@@ -3,4 +3,8 @@ hello world2
 hello world3
 hello world4
 hello world5
+<<<<<<< HEAD
 hello world7
+=======
+hello world8
+>>>>>>> 58f7fa3d1c69335c5203c83c9301900ce9bca092
