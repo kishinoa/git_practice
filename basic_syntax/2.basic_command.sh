@@ -14,9 +14,16 @@ git commit
 # commit이력확인
 git log
 git log --oneline
+# 현재 checkout된 브랜치의 이력 뿐만 아니라, 관계된 참조사항의 모든 이력 조회
+git log --all
 
 
 # 원격저장소로 업로드
 git push origin 브랜치명
 # 충돌발생시 충돌 무시하고, 로컬기준으로 원격에 덮어쓰기
 git push origin 브랜치명 --force
+
+# 특정 commit ID로의 전환
+git checkout 커밋ID
+# 특정 브랜치명으로 전환
+git checkout 브랜치명10
